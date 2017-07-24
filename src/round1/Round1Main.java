@@ -16,10 +16,10 @@ public class Round1Main {
 		SortAscDescInArray sa=new SortAscDescInArray();
 		//sa.sortArray();
 		
-		//sa.sortArrayOpt();
+		sa.sortArrayOpt();
 		
 		RecursionReverseString rrs=new RecursionReverseString();
-		rrs.print();
+		//rrs.print();
 		
 	}
 }

@@ -27,13 +27,15 @@ public class Sudoku {
 		//Rows and Columns
 		for(int i=0;i<sudoku.length;i++){
 			for(int j=0;j<sudoku[0].length;j++){
-				if(row.contains(sudoku[i][j])){isValid=false;}
+				if(row.contains(sudoku[i][j]) || sudoku[i][j] > 9 || sudoku[i][j] < 0){isValid=false;}
 				row.add(sudoku[i][j]);
 				
-				if(col.contains(sudoku[j][i])){isValid=false;}
+				if(col.contains(sudoku[j][i]) || sudoku[j][i] > 9 || sudoku[j][i] < 0){isValid=false;}
 				col.add(sudoku[j][i]);
 				
-				if(square.contains(sudoku[(i / 3) * 3 + j / 3][i * 3 % 9 + j % 3])){isValid=false;}
+				if(square.contains(sudoku[(i / 3) * 3 + j / 3][i * 3 % 9 + j % 3]) || 
+						sudoku[(i / 3) * 3 + j / 3][i * 3 % 9 + j % 3] > 9 ||
+						sudoku[(i / 3) * 3 + j / 3][i * 3 % 9 + j % 3] < 0){isValid=false;}
 				square.add(sudoku[(i / 3) * 3 + j / 3][i * 3 % 9 + j % 3]);
 				
 				//System.out.print(((i / 3) * 3 + j / 3) + " , "+(i * 3 % 9 + j % 3));
