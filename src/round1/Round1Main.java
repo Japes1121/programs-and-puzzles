@@ -1,25 +1,19 @@
-	package round1;
+package round1;
 
 public class Round1Main {
 
-	public static void main(String[] args)
-	{
-		MergeTwoSortedArrays mta=new MergeTwoSortedArrays();
-		//mta.logic();
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
 		
-		PrintCrossWords pcw=new PrintCrossWords();
-		//pcw.printWords();
+		NumberWeight nw=new NumberWeight();
+		//nw.printNumbers();
 		
-		PrintStringPattern psp=new PrintStringPattern();
-		//psp.printPattern();
+		FindStringPatternInMatrix fs=new FindStringPatternInMatrix("WELCOMETOZOHOCORPORATION");
+		//fs.searchIn2D("TOO");
 		
-		SortAscDescInArray sa=new SortAscDescInArray();
-		//sa.sortArray();
-		
-		sa.sortArrayOpt();
-		
-		RecursionReverseString rrs=new RecursionReverseString();
-		//rrs.print();
-		
+		Sudoku s=new Sudoku();
+		System.out.println(s.checkSudoku());
+		//System.out.println(s.checkSudokuStatus());
 	}
+
 }

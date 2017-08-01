@@ -1,4 +1,4 @@
-package round3;
+package round2;
 
 public class FirstMaxSecondMinArraySorting {
 	private int[] numbers;
