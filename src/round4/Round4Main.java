@@ -16,6 +16,24 @@ public class Round4Main {
 		//tfa.printThreshold();
 		
 		RotateAndCompareArray r=new RotateAndCompareArray();
-		r.rotateLogic();
+		//r.rotateLogic();
+		
+		PrintPattern pp=new PrintPattern(6);
+		//pp.printPattern();
+		
+		int[][] c={
+				{1,2,3,4},
+				{5,6,7,8},
+				{9,10,11,12},
+				{13,14,15,16}
+		};
+		
+		int[][] d={
+				{10,11},
+				{14,15}
+		};
+		
+		FindMatrixInMatrix fm=new FindMatrixInMatrix(c, d);
+		fm.rotateAndCheck();
 	}
 }
